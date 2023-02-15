@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="Angie's Food Truck. Gourmet food in Angie's Food truck"
+      name="description"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>ANGIE'S FOOD TRUCK</title>
+  </head>
+  <body>
+    <header id="header">
+      <img class="foto" src="./media/pictures/fotolog.jpg" alt="logo" />
+      <h1>Angie's Food Truck</h1>
+    </header>
+    <nav id="nav">
+      <ul>
+        <li><a href="#" class="navlink">Home</a></li>
+        <li><a href="#footerpartcontainer" class="navlink">Booking</a></li>
+        <li><a href="./html/about.html" class="navlink">About us</a></li>
+        <li><a href="#form" class="navlink">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h2>Gourmet Food Street</h2>
+        <p>
+          Angie's Food Truck is a gourmet gastronomic fusion. Passionate about
+          gastronomy, they decide to take their cuisine all over the world.
+          Spanish gastronomic origins taken to another level by the influence of
+          different cultures is what identifies them. The quality of its
+          products and the experience of more than 10 years in the kitchen offer
+          haute cuisine on wheels.
+        </p>
+        <img
+          alt="foodtruck"
+          id="pictruck"
+          src="./media/pictures/truck.jpg"
+          srcset="
+            ./media/pictures/truck.jpg     360w,
+            ./media/pictures/truck-768.jpg 768w,
+            ./media/pictures/truck-980.jpg 980w
+          "
+          sizes="(min-width: 1000px) 768px"
+        />
+        <p>
+          Characterized mainly by using the best ingredients, preserving all
+          their properties to offer you the highest quality experience.
+        </p>
+        <img alt="food" id="picfood" src="./media/pictures/food.jpg" />
+        <p>
+          We offer you this amazing food in different events. If you want to
+          know what we are talking about contact us or let us contact you. You
+          will gourmet gastronomi in different types of events, like weddings,
+          parties, private events aswell.
+        </p>
+        <img alt="food" id="picfood2" src="./media/pictures/food2.jpg" />
+      </article>
+    </main>
+
+    <footer id="footer">
+      <div id="footerpartcontainer">
+        <div class="footerpart">
+          <dl>
+            <dt>Address:</dt>
+            <dd>Plaza Catalunya, n1. Barcelona</dd>
+            <dt>Phone number:</dt>
+            <dd><a class="footerlink" href="tel:0761234567">076 1234567</a></dd>
+            <dt>Email:</dt>
+            <dd>
+              <a class="footerlink" href="mailto:foodtruck.angie@gmail.com"
+                >foodtruck.angie@gmail.com</a
+              >
+            </dd>
+          </dl>
+        </div>
+        <div class="footerpart">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.4536729804418!2d2.1689328999999993!3d41.38595300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f3f9ad7c27%3A0xed9ac3f47b3a658!2sPlaza%20de%20Catalu%C3%B1a%2C%201%2C%2008002%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sse!4v1663428737822!5m2!1ses!2sse"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="footerpart">
+          <form id="form">
+            <fieldset id="contact">
+              <legend>We contact you</legend>
+              <label> First name: </label>
+              <input
+                class="contactinfo"
+                name="firstname"
+                placeholder="First Name"
+              />
+
+              <label> Phone number: </label>
+              <input
+                class="contactinfo"
+                name="telefon"
+                placeholder="Phone number"
+              />
+              <input class="contactinfo" type="submit" value="Send" />
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <p id="copyright"><i> &copy; Web created by Sheila 2022</i></p>
+    </footer>
+  </body>
+</html>

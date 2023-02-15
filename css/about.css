@@ -1,0 +1,262 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+@font-face {
+  font-family: msmadi;
+  src: url("../media/font/MsMadi-Regular.ttf");
+}
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #323653;
+  color: #fe67db;
+  width: 100%;
+  min-height: 20vh;
+  padding: 10px 0 15px 0;
+  font-family: "msmadi", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.foto {
+  width: 70px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  border-bottom: 2px solid #000000;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff99;
+}
+#nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navlink {
+  color: #323653;
+  font-weight: bold;
+}
+.navlink:hover {
+  color: #fe67db;
+  text-decoration: overline;
+}
+/* header done! */
+
+main {
+  width: 100%;
+  text-align: center;
+  color: #323653;
+  margin: 20px 0 40px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main > p {
+  margin: 15px 25px;
+}
+#imgcontainer {
+  display: grid;
+  grid-template-areas:
+    "chef girl"
+    "man food";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+#imgcontainer > div {
+  margin: 10px auto;
+}
+.chef {
+  grid-area: chef;
+  width: 100px;
+  background-color: #323653;
+}
+.girl {
+  grid-area: girl;
+  width: 100px;
+  background-color: #323653;
+}
+.man {
+  grid-area: man;
+  width: 100px;
+  background-color: #323653;
+}
+.food {
+  grid-area: food;
+  width: 100px;
+  background-color: #323653;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  background-color: #323653;
+  color: #fe67db;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#footerpartcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 30px;
+}
+.footerpart {
+  width: 90%;
+  height: 30vh;
+  margin: 40px 0;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 40px;
+}
+.footerlink {
+  color: #ffffff;
+}
+.footerlink:hover {
+  color: #ef97da;
+  text-decoration: underline;
+}
+
+#form {
+  width: 100%;
+  height: 100%;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 20px;
+}
+.contactinfo {
+  width: 60%;
+  padding: 2px;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+#copyright {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  #header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 15vh;
+    font-size: 35px;
+  }
+  main > p {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .chef {
+    width: 300px;
+  }
+  .girl {
+    width: 300px;
+  }
+  .man {
+    width: 300px;
+  }
+  .food {
+    width: 300px;
+  }
+
+  .foto {
+    width: 150px;
+    margin-bottom: 0;
+  }
+  .navlink {
+    font-size: 30px;
+  }
+  .footerpart {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .contactinfo {
+    padding: 2px;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  #copyright {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  main > p {
+    font-size: 30px;
+    margin: 30px 60px;
+  }
+  .chef {
+    width: 500px;
+  }
+  .girl {
+    width: 500px;
+  }
+  .man {
+    width: 500px;
+  }
+  .food {
+    width: 500px;
+  }
+  #footer {
+    width: 100%;
+  }
+  #footerpartcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .footerpart {
+    width: 30%;
+    height: 40vh;
+    font-size: 15px;
+  }
+  .contactinfo {
+    font-size: 10px;
+  }
+  #copyright {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding: 0;
+  }
+}
